@@ -4,7 +4,7 @@ import 'package:flutter_app_guidline/ui/home_page.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(const LearnApp());
+  runApp(const LearnApp()); // start application from here
 }
 
 class LearnApp extends StatelessWidget {
