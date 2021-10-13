@@ -17,7 +17,7 @@ class HomeBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text(
-            'You have pushed the button this many times:',
+            'You have pushed the button using the getx controller',
           ),
           Obx(
             () => Text(

@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_guidline/ui/components.dart/_body.dart';
-import 'package:flutter_app_guidline/ui/components.dart/_floating_btn.dart';
-import 'package:flutter_app_guidline/ui/components.dart/appbar.dart';
-import 'package:flutter_app_guidline/ui/home_controller.dart';
+import 'package:flutter_app_guidline/ui/counter/components/_body.dart';
+import 'package:flutter_app_guidline/ui/counter/components/_floating_btn.dart';
+import 'package:flutter_app_guidline/ui/counter/components/appbar.dart';
+import 'package:flutter_app_guidline/ui/counter/home_controller.dart';
+
 import 'package:get/get.dart';
 
 // ignore: must_be_immutable
@@ -16,11 +17,8 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
         appBar: actionBar(),
-        // this will render the application body
         body: HomeBody(controller: controller),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-        floatingActionButton: FloatingWidget()
-        // This trailing comma makes auto-formatting nicer for build methods.
-        );
+        floatingActionButton: FloatingWidget());
   }
 }
