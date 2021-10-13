@@ -10,24 +10,25 @@ class FloatingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.end,
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         FloatingActionButton(
           onPressed: () => controller.increment(),
           child: const Icon(CupertinoIcons.add),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(height: 10),
         FloatingActionButton(
           onPressed: () => controller.reset(),
           child: const Icon(CupertinoIcons.refresh),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(height: 10),
         FloatingActionButton(
           onPressed: () => controller.decrement(),
           child: const Icon(CupertinoIcons.minus),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(height: 10),
       ],
     );
   }

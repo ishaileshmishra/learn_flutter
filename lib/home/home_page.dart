@@ -17,7 +17,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: actionBar(),
         body: HomeBody(controller: controller),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingWidget());
   }
 }
