@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_guidline/ui/product_list/product_list.dart';
-import 'package:get/get.dart';
 
 AppBar actionBar() {
   return AppBar(
@@ -13,7 +11,7 @@ AppBar actionBar() {
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.pink),
           ),
-          onPressed: () => Get.to(const ListScreen()),
+          onPressed: null, //() => Get.to(() => const ProductScreen()),
           child: const Text('NEXT'),
         )),
       ),

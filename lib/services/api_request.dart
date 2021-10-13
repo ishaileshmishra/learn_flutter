@@ -1,14 +1,16 @@
 import 'package:dio/dio.dart';
 
-void getProducts() async {
+const String productURL = 'https://fakestoreapi.com/products';
+
+getProducts() async {
   try {
-    var response = await Dio().get('https://fakestoreapi.com/products');
+    var response = await Dio().get(productURL);
     if (response.statusCode == 200) {
-      print(await response.data);
+      return null;
     } else {
-      print(response.data);
+      return null;
     }
   } catch (e) {
-    print(e.toString());
+    return null;
   }
 }

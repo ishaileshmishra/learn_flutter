@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_guidline/ui/counter/home_bindings.dart';
-import 'package:flutter_app_guidline/ui/counter/home_page.dart';
-import 'package:flutter_app_guidline/ui/product_list/product_binding.dart';
-import 'package:flutter_app_guidline/ui/product_list/product_list.dart';
+import 'package:flutter_app_guidline/home/home_bindings.dart';
+import 'package:flutter_app_guidline/home/home_page.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -25,11 +23,6 @@ class LearnApp extends StatelessWidget {
           page: () => const HomePage(),
           binding: HomeBinding(),
         ),
-        GetPage(
-          name: '/product_list',
-          page: () => const ListScreen(),
-          binding: ProductBinding(),
-        )
       ],
       initialRoute: "/home_page",
     );

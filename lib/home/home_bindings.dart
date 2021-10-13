@@ -1,4 +1,4 @@
-import 'package:flutter_app_guidline/ui/counter/home_controller.dart';
+import 'package:flutter_app_guidline/home/home_controller.dart';
 import 'package:get/get.dart';
 import 'package:get/get_instance/src/bindings_interface.dart';
 
